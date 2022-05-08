@@ -14,11 +14,9 @@ export const fetchWithTimeout = async (url = '') => {
       code = err.code;
       return err;
     });
-  console.log('---result', result);
 
   // ECONNABORTED' = timeout
   // ECONNREFUSED = offline
-  console.log('--- fetchWithTimeout', { statusText, code });
 
   return { statusText, code };
 };

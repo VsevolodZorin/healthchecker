@@ -186,8 +186,6 @@ class HealthcheckController {
   buildSingleServiceResponse = (
     service: MicroserviceEntity,
   ): SingleMsResponse => {
-    console.log('--- single serv', service);
-
     const { id, name, checkUrl } = service;
     return { id, name, checkUrl };
   };
